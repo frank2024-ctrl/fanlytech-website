@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FanlyTech - Innovative Tech Solutions</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background: #0a192f;
+    color: #fff;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* TOGGLE BUTTON */
+.toggle {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* NAV MENU */
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    background: #112240;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+.nav-menu a {
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #233554;
+}
+
+.nav-menu a:hover {
+    background: #233554;
+}
+
+/* HERO SECTION */
+.hero {
+    background: url('https://images.unsplash.com/photo-1518770660439-4636190af475') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero button {
+    margin: 10px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.book {
+    background: #64ffda;
+}
+
+.email {
+    background: #ff6b6b;
+    color: white;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services, .testimonials {
+    background: #f4f4f4;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* TESTIMONIALS */
+.testimonial {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* FORM */
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button.submit {
+    background: #0a192f;
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background: #0a192f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="nav-container">
+        <div class="logo">FanlyTech</div>
+        <div class="toggle" onclick="toggleMenu()">☰</div>
+    </div>
+    <div class="nav-menu" id="menu">
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Welcome to FanlyTech</h1>
+        <p>Innovative Solutions for Modern Businesses</p>
+        <button class="book">Book Now</button>
+        <button class="email" onclick="location.href='mailto:info@fanlytech.com'">Email Us</button>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+            <h3>Web Development</h3>
+            <p>Modern, scalable websites tailored to your needs.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c">
+            <h3>App Development</h3>
+            <p>Powerful mobile applications for all platforms.</p>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+            <h3>Cloud Solutions</h3>
+            <p>Secure and scalable cloud infrastructure.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="grid">
+
+        <div class="testimonial"><p>"Amazing service!"</p><h4>- John Carter</h4></div>
+        <div class="testimonial"><p>"Highly professional."</p><h4>- Sarah Lee</h4></div>
+        <div class="testimonial"><p>"Great support team."</p><h4>- David Kim</h4></div>
+        <div class="testimonial"><p>"Top-notch development."</p><h4>- Aisha Bello</h4></div>
+        <div class="testimonial"><p>"Exceeded expectations."</p><h4>- Michael Brown</h4></div>
+        <div class="testimonial"><p>"Very reliable."</p><h4>- Fatima Yusuf</h4></div>
+        <div class="testimonial"><p>"Creative solutions."</p><h4>- Daniel Adams</h4></div>
+        <div class="testimonial"><p>"Fast delivery."</p><h4>- Grace Smith</h4></div>
+        <div class="testimonial"><p>"User-friendly designs."</p><h4>- James Wilson</h4></div>
+        <div class="testimonial"><p>"Outstanding experience."</p><h4>- Linda Johnson</h4></div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Send Us Your Feedback</h2>
+    <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Review" required></textarea>
+        <button class="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 FanlyTech. All Rights Reserved.</p>
+</footer>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("menu");
+    menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+}
+
+function submitForm(e) {
+    e.preventDefault();
+    alert("Thank you! Your review has been submitted.");
+}
+</script>
+
+</body>
+</html>
+
