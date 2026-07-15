@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How We're Actually Using AI in Client Projects — Fanlytech Tech Blog</title>
+<meta name="description" content="A practical breakdown of where AI tooling genuinely speeds up delivery on real client work, and where Fanlytech Tech still relies on human engineering judgment.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="mark"></span>Fanlytech<span class="co">.</span></a>
+    <nav class="main-nav">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;">Start a project</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero" style="padding-bottom:50px;">
+  <div class="wrap article-header">
+    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="blog.html">Blog</a> / Article</div>
+    <div class="post-meta" style="margin-bottom:18px;">
+      <span class="cat">AI &amp; Engineering</span>
+      <span>·</span>
+      <span>July 8, 2026</span>
+      <span>·</span>
+      <span>7 min read</span>
+    </div>
+    <h1>How We're Actually Using AI in Client Projects (No Hype)</h1>
+    <p class="lead">A practical breakdown of where AI tooling genuinely speeds up delivery on real client work — and the parts of the process we still do entirely by hand.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap">
+    <div class="article-cover reveal">
+      <svg viewBox="0 0 900 380" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="acg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#5B5FEF"/>
+            <stop offset="100%" stop-color="#3ED8C3"/>
+          </linearGradient>
+        </defs>
+        <rect width="900" height="380" fill="#0B1220"/>
+        <g stroke="rgba(255,255,255,0.05)"><line x1="0" y1="95" x2="900" y2="95"/><line x1="0" y1="190" x2="900" y2="190"/><line x1="0" y1="285" x2="900" y2="285"/></g>
+        <circle cx="450" cy="190" r="130" fill="url(#acg)" opacity="0.15"/>
+        <circle cx="450" cy="190" r="80" fill="none" stroke="url(#acg)" stroke-width="2"/>
+        <circle cx="450" cy="190" r="6" fill="#3ED8C3"/>
+        <path d="M450 110 L450 60 M530 190 L580 190 M450 270 L450 320 M370 190 L320 190" stroke="#5B5FEF" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="450" cy="60" r="8" fill="#5B5FEF"/><circle cx="580" cy="190" r="8" fill="#5B5FEF"/><circle cx="450" cy="320" r="8" fill="#5B5FEF"/><circle cx="320" cy="190" r="8" fill="#5B5FEF"/>
+      </svg>
+    </div>
+
+    <div class="article-body reveal">
+      <p>Every client conversation this year has included some version of the same question: "Are you using AI to build this?" The honest answer is yes — but probably not in the way most people picture it. AI hasn't replaced engineering judgment on our projects; it's changed which parts of the job take an hour instead of a day.</p>
+
+      <p>Here's a straightforward look at where AI tooling has actually earned a place in our workflow, and where it hasn't.</p>
+
+      <h2>Where it genuinely helps</h2>
+
+      <h3>Scaffolding and boilerplate</h3>
+      <p>Setting up a new project's folder structure, config files, and repetitive component patterns used to eat the first day of every engagement. AI-assisted tooling now handles most of that groundwork in minutes, which means our engineers start writing the parts of the code that actually differentiate the product on day one instead of day three.</p>
+
+      <h3>First-pass code review</h3>
+      <p>Before a pull request reaches a senior engineer, an AI pass catches obvious issues — unused variables, missing error handling, inconsistent naming. It's not a replacement for human review, but it means the humans spend their time on architecture and logic instead of style nits.</p>
+
+      <h3>Documentation</h3>
+      <p>Writing clear internal documentation is the task every engineering team says they'll get to and rarely does. AI-generated first drafts, edited by the engineer who wrote the code, have meaningfully improved how well-documented our handoffs are.</p>
+
+      <blockquote>The gain isn't that AI writes better code than our engineers. It's that it removes the tedious 20% of the job so engineers spend more time on the 80% that requires actual judgment.</blockquote>
+
+      <h2>Where it doesn't help — and where it can hurt</h2>
+
+      <h3>Architecture decisions</h3>
+      <p>Choosing how a system should be structured requires understanding a client's business, not just their codebase. This is where senior engineering experience still does the heavy lifting, and where we've seen AI-generated suggestions confidently recommend patterns that don't fit the actual constraints of a project.</p>
+
+      <h3>Security-sensitive code</h3>
+      <p>Authentication flows, payment handling, and access control get written and reviewed entirely by senior engineers. The cost of a subtle mistake here is too high to delegate, even partially.</p>
+
+      <h3>Client-facing product decisions</h3>
+      <p>What a feature should do, how it should feel to use, and whether it's worth building at all — these are conversations with humans, not prompts. No tooling changes that.</p>
+
+      <h2>Our actual rule of thumb</h2>
+      <p>If a task is mechanical and its output is easy to verify at a glance, AI tooling probably has a role in it. If a task requires weighing trade-offs specific to a client's business, it doesn't. That distinction has kept our delivery timelines shorter without lowering the bar on the work itself.</p>
+
+      <p>We'll keep updating how we use these tools as they improve — but the standard stays the same: every line of code that ships to a client gets reviewed by a senior engineer who understands why it's there.</p>
+    </div>
+
+    <div class="article-author reveal">
+      <div class="av"></div>
+      <div>
+        <strong>Eric Fanlyt</strong>
+        <span>Founder &amp; CEO, Fanlytech Tech</span>
+      </div>
+    </div>
+
+    <div class="share-tags reveal">
+      <span>AI Tooling</span><span>Engineering Process</span><span>Code Quality</span>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED -->
+<section class="section" style="background:var(--paper-dim);">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="mono-tag">// keep_reading</span>
+      <h2>More from the blog.</h2>
+    </div>
+    <div class="blog-grid">
+      <a href="blog.html" class="post-card reveal">
+        <div class="post-visual">
+          <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="#0B1220"/>
+            <rect x="130" y="60" width="140" height="130" rx="12" fill="#121B2E" stroke="#24314A"/>
+            <circle cx="170" cy="105" r="10" fill="#5B5FEF"/><circle cx="230" cy="105" r="10" fill="#3ED8C3"/>
+            <rect x="155" y="140" width="90" height="8" rx="2" fill="#24314A"/>
+          </svg>
+        </div>
+        <div class="post-card-body">
+          <div class="post-meta"><span class="cat">AI &amp; Engineering</span><span>8 min</span></div>
+          <h3>Where AI Coding Assistants Actually Save Time</h3>
+          <p>A breakdown by task type of where these tools help — and where human review still wins.</p>
+          <span class="read-more">Read article</span>
+        </div>
+      </a>
+      <a href="blog.html" class="post-card reveal">
+        <div class="post-visual">
+          <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="#0B1220"/>
+            <rect x="50" y="70" width="100" height="70" rx="6" fill="#121B2E" stroke="#24314A"/>
+            <rect x="150" y="70" width="100" height="70" rx="6" fill="#5B5FEF"/>
+            <rect x="250" y="70" width="100" height="70" rx="6" fill="#121B2E" stroke="#24314A"/>
+          </svg>
+        </div>
+        <div class="post-card-body">
+          <div class="post-meta"><span class="cat">Product Strategy</span><span>5 min</span></div>
+          <h3>MVP or Full Build? A Framework for Deciding</h3>
+          <p>The questions we ask every client before recommending a scoped-down release.</p>
+          <span class="read-more">Read article</span>
+        </div>
+      </a>
+      <a href="blog.html" class="post-card reveal">
+        <div class="post-visual">
+          <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="#0B1220"/>
+            <rect x="40" y="180" width="30" height="40" fill="#5B5FEF"/>
+            <rect x="140" y="100" width="30" height="120" fill="#3ED8C3"/>
+            <rect x="240" y="120" width="30" height="100" fill="#5B5FEF"/>
+          </svg>
+        </div>
+        <div class="post-card-body">
+          <div class="post-meta"><span class="cat">Web Performance</span><span>5 min</span></div>
+          <h3>Core Web Vitals in 2026: What Actually Moves the Needle</h3>
+          <p>The metrics that matter this year, and the fixes that produce the biggest gains.</p>
+          <span class="read-more">Read article</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Have a project that needs this kind of thinking?</h2>
+    <p>Let's talk about what you're building and how we'd approach it.</p>
+    <a href="contact.html" class="btn btn-primary btn-arrow">Start a project</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="mark"></span>Fanlytech<span class="co">.</span></a>
+        <p>A product studio designing and engineering websites and applications for growing companies.</p>
+      </div>
+      <div>
+        <h4>// company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="about.html#team">Our team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>// offerings</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>// resources</h4>
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Get in touch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Fanlytech Tech. All rights reserved.</span>
+      <span>Built by Fanlytech, obviously.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
