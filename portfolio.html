@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio &amp; Case Studies — Fanlytech Tech</title>
+<meta name="description" content="See Fanlytech Tech's work in action — case studies from fintech, healthcare, retail, and logistics clients, with real results.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logo"><span class="mark"></span>Fanlytech<span class="co">.</span></a>
+    <nav class="main-nav">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="btn btn-primary" style="padding:10px 20px;">Start a project</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Portfolio</div>
+    <span class="mono-tag">// portfolio</span>
+    <h1>Our tech, in production, solving real problems.</h1>
+    <p class="lead">A selection of projects across fintech, healthcare, retail, and logistics — each one built, launched, and still running today.</p>
+    <div class="hero-stats" style="margin-top:36px;">
+      <div><strong data-count="120" data-suffix="+">0</strong><span>projects shipped</span></div>
+      <div><strong data-count="14" data-suffix="">0</strong><span>industries served</span></div>
+      <div><strong data-count="98" data-suffix="%">0</strong><span>client retention</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE GRID -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="mono-tag">// selected_work</span>
+      <h2>Browse by industry.</h2>
+    </div>
+
+    <div class="portfolio-filter reveal" id="portfolio-filter">
+      <button type="button" class="active" data-filter="all">All work</button>
+      <button type="button" data-filter="fintech">Fintech</button>
+      <button type="button" data-filter="healthcare">Healthcare</button>
+      <button type="button" data-filter="retail">Retail</button>
+      <button type="button" data-filter="logistics">Logistics</button>
+    </div>
+
+    <div class="case-grid" id="case-grid">
+
+      <a href="#northgate" class="case-card reveal" data-category="fintech">
+        <div class="case-visual">
+          <span class="case-industry">Fintech</span>
+          <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="#0B1220"/>
+            <rect x="60" y="60" width="280" height="130" rx="10" fill="#121B2E" stroke="#24314A"/>
+            <path d="M80 160 L130 120 L170 140 L220 90 L270 110 L320 75" fill="none" stroke="#3ED8C3" stroke-width="3"/>
+            <circle cx="320" cy="75" r="5" fill="#3ED8C3"/>
+            <rect x="80" y="80" width="60" height="10" rx="2" fill="#5B5FEF"/>
+          </svg>
+        </div>
+        <div class="case-body">
+          <h3>Northgate Financial</h3>
+          <p>A real-time investment dashboard replacing three legacy internal tools.</p>
+          <div class="case-stats">
+            <div><strong>63%</strong><span>faster load time</span></div>
+            <div><strong>4.2k</strong><span>daily active users</span></div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#cascade" class="case-card reveal" data-category="healthcare">
+        <div class="case-visual">
+          <span class="case-industry">Healthcare</span>
+          <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="#0B1220"/>
+            <rect x="70" y="50" width="100" height="150" rx="8" fill="#121B2E" stroke="#24314A"/>
+            <rect x="230" y="50" width="100" height="150" rx="8" fill="#121B2E" stroke="#24314A"/>
+            <path d="M108 105 h24 v-24 h16 v24 h24 v16 h-24 v24 h-16 v-24 h-24 z" fill="#3ED8C3"/>
+            <rect x="248" y="90" width="64" height="8" rx="2" fill="#5B5FEF"/>
+            <rect x="248" y="106" width="64" height="8" rx="2" fill="#24314A"/>
+            <rect x="248" y="122" width="40" height="8" rx="2" fill="#24314A"/>
+          </svg>
+        </div>
+        <div class="case-body">
+          <h3>Cascade Health Network</h3>
+          <p>A HIPAA-compliant patient portal for appointment booking and secure messaging.</p>
+          <div class="case-stats">
+            <div><strong>31%</strong><span>fewer missed appts.</span></div>
+            <div><strong>18k</strong><span>active patients</span></div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#ferro" class="case-card reveal" data-category="retail">
+        <div class="case-visual">
+          <span class="case-industry">Retail</span>
+          <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="#0B1220"/>
+            <rect x="60" y="50" width="90" height="90" rx="6" fill="#121B2E" stroke="#24314A"/>
+            <rect x="160" y="50" width="90" height="90" rx="6" fill="#5B5FEF"/>
+            <rect x="260" y="50" width="80" height="90" rx="6" fill="#121B2E" stroke="#24314A"/>
+            <rect x="60" y="150" width="280" height="40" rx="8" fill="#3ED8C3" opacity="0.9"/>
+          </svg>
+        </div>
+        <div class="case-body">
+          <h3>Ferro &amp; Finch</h3>
+          <p>A custom e-commerce storefront and inventory system for a 40-location retailer.</p>
+          <div class="case-stats">
+            <div><strong>2.1x</strong><span>online conversion</span></div>
+            <div><strong>$3.4M</strong><span>year-one revenue</span></div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#orbitly" class="case-card reveal" data-category="logistics">
+        <div class="case-visual">
+          <span class="case-industry">Logistics</span>
+          <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="#0B1220"/>
+            <circle cx="200" cy="125" r="90" fill="none" stroke="#24314A"/>
+            <path d="M200 125 L260 80 M200 125 L150 70 M200 125 L260 175 M200 125 L140 180" stroke="#4B5468"/>
+            <circle cx="200" cy="125" r="12" fill="#5B5FEF"/>
+            <circle cx="260" cy="80" r="7" fill="#3ED8C3"/><circle cx="150" cy="70" r="7" fill="#3ED8C3"/><circle cx="260" cy="175" r="7" fill="#3ED8C3"/><circle cx="140" cy="180" r="7" fill="#3ED8C3"/>
+          </svg>
+        </div>
+        <div class="case-body">
+          <h3>Orbitly Logistics</h3>
+          <p>A route optimization and fleet tracking application built for real-time dispatch.</p>
+          <div class="case-stats">
+            <div><strong>27%</strong><span>fuel cost reduction</span></div>
+            <div><strong>340</strong><span>vehicles tracked</span></div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#verdant" class="case-card reveal" data-category="fintech">
+        <div class="case-visual">
+          <span class="case-industry">Fintech</span>
+          <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="#0B1220"/>
+            <rect x="150" y="20" width="100" height="210" rx="16" fill="#121B2E" stroke="#24314A"/>
+            <rect x="164" y="42" width="72" height="140" rx="4" fill="#5B5FEF" opacity="0.85"/>
+            <rect x="176" y="60" width="48" height="10" rx="2" fill="#0B1220"/>
+            <rect x="176" y="90" width="48" height="30" rx="4" fill="#3ED8C3"/>
+          </svg>
+        </div>
+        <div class="case-body">
+          <h3>Verdant Labs</h3>
+          <p>A mobile-first budgeting app with bank integrations, built from concept to launch.</p>
+          <div class="case-stats">
+            <div><strong>50k+</strong><span>app downloads</span></div>
+            <div><strong>4.8★</strong><span>App Store rating</span></div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#pinewood" class="case-card reveal" data-category="retail">
+        <div class="case-visual">
+          <span class="case-industry">Retail</span>
+          <svg viewBox="0 0 400 250" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="250" fill="#0B1220"/>
+            <rect x="60" y="60" width="280" height="130" rx="10" fill="#121B2E" stroke="#24314A"/>
+            <rect x="85" y="85" width="60" height="60" rx="6" fill="#5B5FEF"/>
+            <rect x="160" y="85" width="60" height="60" rx="6" fill="#3ED8C3"/>
+            <rect x="235" y="85" width="60" height="60" rx="6" fill="#5B5FEF" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="case-body">
+          <h3>Pinewood Goods Co.</h3>
+          <p>A headless commerce rebuild that cut checkout abandonment on mobile.</p>
+          <div class="case-stats">
+            <div><strong>-38%</strong><span>cart abandonment</span></div>
+            <div><strong>1.9s</strong><span>avg. load time</span></div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- DEEP-DIVE CASE STUDIES -->
+<section class="section" style="background:var(--paper-dim); padding-bottom:0;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="mono-tag">// in_depth</span>
+      <h2>A closer look at two projects.</h2>
+    </div>
+  </div>
+
+  <div class="wrap">
+
+    <div class="case-detail reveal" id="northgate">
+      <div class="case-detail-head">
+        <div>
+          <span class="service-tag">Fintech</span>
+          <h2>Northgate Financial: One dashboard, replacing three legacy tools.</h2>
+        </div>
+        <div class="case-meta-list">
+          <div><span>timeline</span><strong>9 weeks</strong></div>
+          <div><span>team</span><strong>4 engineers</strong></div>
+          <div><span>stack</span><strong>React, Node, PostgreSQL</strong></div>
+        </div>
+      </div>
+
+      <div class="case-cover">
+        <svg viewBox="0 0 1200 450" xmlns="http://www.w3.org/2000/svg">
+          <rect width="1200" height="450" fill="#0B1220"/>
+          <g stroke="rgba(255,255,255,0.05)"><line x1="0" y1="110" x2="1200" y2="110"/><line x1="0" y1="220" x2="1200" y2="220"/><line x1="0" y1="330" x2="1200" y2="330"/></g>
+          <rect x="120" y="90" width="960" height="270" rx="14" fill="#121B2E" stroke="#24314A"/>
+          <path d="M170 300 L280 230 L370 260 L470 170 L580 200 L700 130 L820 160 L960 100" fill="none" stroke="#3ED8C3" stroke-width="4"/>
+          <circle cx="960" cy="100" r="7" fill="#3ED8C3"/>
+          <rect x="170" y="130" width="140" height="16" rx="4" fill="#5B5FEF"/>
+        </svg>
+      </div>
+
+      <div class="case-columns reveal">
+        <div>
+          <h4>// the_problem</h4>
+          <p>Northgate's analysts were pulling data across three disconnected internal tools every morning, manually reconciling numbers before client meetings — a process prone to errors and taking up to two hours daily per analyst.</p>
+        </div>
+        <div>
+          <h4>// our_approach</h4>
+          <p>We consolidated all three data sources into a single real-time dashboard with role-based views, built on a new API layer that pulled directly from Northgate's trading systems.</p>
+        </div>
+        <div>
+          <h4>// the_result</h4>
+          <p>Analysts now get live data with zero manual reconciliation. The dashboard has become the primary tool for over 4,000 daily users across the firm.</p>
+        </div>
+      </div>
+
+      <div class="case-result-strip reveal">
+        <div><strong>63%</strong><span>faster page load vs. legacy tools</span></div>
+        <div><strong>~2 hrs</strong><span>saved per analyst, per day</span></div>
+        <div><strong>4,200</strong><span>daily active users</span></div>
+        <div><strong>99.98%</strong><span>uptime since launch</span></div>
+      </div>
+
+      <div class="case-quote reveal">
+        "Fanlytech didn't just build what we asked for — they questioned our workflow first, and the dashboard we ended up with was better than what we originally scoped."
+        <cite>— VP of Operations, Northgate Financial</cite>
+      </div>
+    </div>
+
+    <div class="case-detail reveal" id="cascade">
+      <div class="case-detail-head">
+        <div>
+          <span class="service-tag">Healthcare</span>
+          <h2>Cascade Health: A patient portal built for compliance and ease of use.</h2>
+        </div>
+        <div class="case-meta-list">
+          <div><span>timeline</span><strong>12 weeks</strong></div>
+          <div><span>team</span><strong>5 engineers</strong></div>
+          <div><span>stack</span><strong>Next.js, AWS, HIPAA-compliant infra</strong></div>
+        </div>
+      </div>
+
+      <div class="case-cover">
+        <svg viewBox="0 0 1200 450" xmlns="http://www.w3.org/2000/svg">
+          <rect width="1200" height="450" fill="#0B1220"/>
+          <g stroke="rgba(255,255,255,0.05)"><line x1="0" y1="110" x2="1200" y2="110"/><line x1="0" y1="220" x2="1200" y2="220"/><line x1="0" y1="330" x2="1200" y2="330"/></g>
+          <rect x="240" y="80" width="280" height="290" rx="14" fill="#121B2E" stroke="#24314A"/>
+          <rect x="700" y="80" width="280" height="290" rx="14" fill="#121B2E" stroke="#24314A"/>
+          <path d="M340 190 h50 v-50 h30 v50 h50 v30 h-50 v50 h-30 v-50 h-50 z" fill="#3ED8C3"/>
+          <rect x="740" y="170" width="200" height="16" rx="4" fill="#5B5FEF"/>
+          <rect x="740" y="200" width="200" height="16" rx="4" fill="#24314A"/>
+          <rect x="740" y="230" width="120" height="16" rx="4" fill="#24314A"/>
+        </svg>
+      </div>
+
+      <div class="case-columns reveal">
+        <div>
+          <h4>// the_problem</h4>
+          <p>Cascade's patients had no way to book appointments or message providers online, driving a high volume of phone-only scheduling and a persistent no-show rate.</p>
+        </div>
+        <div>
+          <h4>// our_approach</h4>
+          <p>We built a HIPAA-compliant portal with online booking, automated reminders, and secure provider messaging — designed to be usable by patients across a wide age range.</p>
+        </div>
+        <div>
+          <h4>// the_result</h4>
+          <p>Missed appointments dropped meaningfully in the first quarter after launch, and the portal now handles the majority of new scheduling volume.</p>
+        </div>
+      </div>
+
+      <div class="case-result-strip reveal">
+        <div><strong>31%</strong><span>reduction in missed appointments</span></div>
+        <div><strong>18,000+</strong><span>active patient accounts</span></div>
+        <div><strong>72%</strong><span>of bookings now self-service</span></div>
+        <div><strong>100%</strong><span>HIPAA compliance audit pass</span></div>
+      </div>
+
+      <div class="case-quote reveal">
+        "The team treated compliance as a first-class requirement, not an afterthought. That mattered enormously for a healthcare product."
+        <cite>— Director of Digital Health, Cascade Health Network</cite>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Want results like these for your product?</h2>
+    <p>Tell us what you're building — we'll show you how we'd approach it.</p>
+    <a href="contact.html" class="btn btn-primary btn-arrow">Start a project</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="mark"></span>Fanlytech<span class="co">.</span></a>
+        <p>A product studio designing and engineering websites and applications for growing companies.</p>
+      </div>
+      <div>
+        <h4>// company</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="about.html#team">Our team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>// offerings</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>// resources</h4>
+        <ul>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Get in touch</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Fanlytech Tech. All rights reserved.</span>
+      <span>Built by Fanlytech, obviously.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
